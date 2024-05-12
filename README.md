@@ -10,6 +10,7 @@ Run an SPA build using the original `vite.config.ts` file from the repository te
 npx vite build
 ```
 
+## Legacy build
 Run a legacy build using a custom Vite config file which adds the Vite Legacy plugin which disables modern chunks from being transpiled: `renderModernChunks: false`
 ```sh
 npx vite build -c vite.legacy.config.ts
