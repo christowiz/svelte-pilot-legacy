@@ -2,7 +2,9 @@
 
 Svelte Pilot errors when building using the [Vite Legacy plugin](https://www.npmjs.com/package/@vitejs/plugin-legacy).
 
-To see the issue compare running the two following build:
+To see the issue compare running the two following builds using `npx vite preview`
+
+_Note:_ This does not happen in dev mode
 
 ## Modern build
 Run an SPA build using the original `vite.config.ts` file from the repository template.
@@ -15,6 +17,7 @@ Run a legacy build using a custom Vite config file which adds the Vite Legacy pl
 ```sh
 npx vite build -c vite.legacy.config.ts
 ```
+
 
 ---
 
