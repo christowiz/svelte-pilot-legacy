@@ -1,3 +1,22 @@
+# Example Legacy Issue
+
+Svelte Pilot errors when building using the [Vite Legacy plugin](https://www.npmjs.com/package/@vitejs/plugin-legacy).
+
+To see the issue compare running the two following build:
+
+## Modern build
+Run an SPA build using the original `vite.config.ts` file from the repository template.
+```sh
+npx vite build
+```
+
+Run a legacy build using a custom Vite config file which adds the Vite Legacy plugin which disables modern chunks from being transpiled: `renderModernChunks: false`
+```sh
+npx vite build -c vite.legacy.config.ts
+```
+
+---
+
 # Svelte Pilot Template
 
 A template based on the [Svelte Pilot](https://github.com/svelte-pilot/svelte-pilot) routing library, offering server-side rendering (SSR) and other rich features.
