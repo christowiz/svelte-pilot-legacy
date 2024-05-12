@@ -20,6 +20,12 @@ Run a legacy build using a custom Vite config file which adds the Vite Legacy pl
 npx vite build -c vite.legacy.config.ts
 ```
 
+This build fails when running the app.
+
+```
+index-legacy-DmWxBHHi.js:1 Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'fragment')
+```
+![alt text](image.png)
 
 ---
 
